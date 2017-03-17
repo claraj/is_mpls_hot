@@ -8,7 +8,7 @@ var twitter = require('./twitter');
 
 // Formulate string and post to Twitter
 
-weather.getForecastHigh('Winston-Salem://', 'MN', function(err, forecast_data){
+weather.getForecastHigh('Minneapolis', 'MN', function(err, forecast_data){
   if (err) {
     console.log(err);
     return;
