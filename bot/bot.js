@@ -48,7 +48,8 @@ function createStatus(forecast, record, average) {
   }
 
   if (forecast < average) {
-    deviation = (record - average) + 'C lower than average';
+    // absolute value or will display as -4C lower than average. 
+    deviation = Math.abs(forecast - average) + 'C lower than average';
   }
 
   var newRecord = '';
